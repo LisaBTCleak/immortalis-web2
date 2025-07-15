@@ -1,0 +1,60 @@
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      background-color: #111;
+      padding: 40px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #1affbc3f;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #1affbc;
+      margin-bottom: 20px;
+    }
+
+    em {
+      color: #999;
+      display: block;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #333;
+      margin: 30px 0;
+    }
+
+    a {
+      color: #1affbc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    strong {
+      color: #fff;
+    }
