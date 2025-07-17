@@ -1,60 +1,88 @@
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #0a0a0a;
-      color: #e0e0e0;
-      font-family: 'Share Tech Mono', monospace;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .container {
-      width: 90%;
-      max-width: 800px;
-      background-color: #111;
-      padding: 40px;
-      border: 1px solid #333;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #1affbc3f;
-    }
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  font-family: 'Share Tech Mono', monospace;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
 
-    h1 {
-      font-size: 20px;
-      color: #1affbc;
-      margin-bottom: 20px;
-    }
+/* ✅ THIS was missing — container full width */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 1rem;
+  background-color: #111;
+  box-shadow: inset 0 0 10px #1affbc15;
+  border-left: 4px solid #1affbc20;
+  border-right: 4px solid #1affbc20;
+}
 
-    em {
-      color: #999;
-      display: block;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
+/* Typography & Layout */
+h1 {
+  font-size: 1.4rem;
+  color: #1affbc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
-    .divider {
-      height: 1px;
-      background-color: #333;
-      margin: 30px 0;
-    }
+em {
+  color: #888;
+  display: block;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
 
-    a {
-      color: #1affbc;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
+.divider {
+  height: 1px;
+  background-color: #333;
+  margin: 1.5rem 0;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+a {
+  color: #fff178;
+  font-weight: bold;
+  word-break: break-word;
+  text-decoration: none;
+}
 
-    p {
-      line-height: 1.8;
-      font-size: 14px;
-    }
+a:hover {
+  color: #ffff88;
+  text-decoration: underline;
+}
 
-    strong {
-      color: #fff;
-    }
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #fff;
+  word-break: break-word;
+}
+
+/* Mobile Tweak */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem 1rem;
+    border-left: none;
+    border-right: none;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p, em, a {
+    font-size: 0.95rem;
+  }
+}
